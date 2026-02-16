@@ -1,0 +1,41 @@
+Step 1 – Create Project Folder
+mkdir Week5-Ethical-Hacking
+cd Week5-Ethical-Hacking
+
+Step 2 – Add README
+nano README.md
+
+
+Paste the 15-line README above → Save → CTRL+X → Y → Enter
+
+Step 3 – Add Reports & Scripts
+
+Add Nikto report: nikto_report.txt
+
+Add ZAP HTML report: zap_report.html
+
+Add Lynis log: /var/log/lynis.log
+
+Add screenshots, scripts, payloads, any notes
+
+Step 4 – Initialize Git
+git init
+
+Step 5 – Stage All Files
+git add .
+
+Step 6 – Commit Changes
+git commit -m "Week 5 Ethical Hacking and Vulnerability Exploitation"
+
+Step 7 – Create GitHub Repository
+
+Go to GitHub → New Repository
+
+Name: Week5-Ethical-Hacking
+
+Do not initialize with README → Click Create
+
+Step 8 – Push Local Repo to GitHub
+git remote add origin https://github.com/yourusername/Week5-Ethical-Hacking.git
+git branch -M main
+git push -u origin main
